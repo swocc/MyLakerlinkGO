@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         mWebView.loadUrl("https://mylakerlink.socc.edu/go");
-        mWebView.setWebViewClient(new MyAppWebViewClient());
+        //mWebView.setWebViewClient(new MyAppWebViewClient());
+
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
