@@ -2,14 +2,14 @@ package edu.httpsocc.mylakerlinkgo;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 /**
- * Created by Chris Eckersley on 11/25/2015.
+ * Created by 130308 on 11/25/2015.
  */
-
-public class  MyAppWebViewClient extends WebViewClient {
+public class MyAppWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
@@ -20,5 +20,7 @@ public class  MyAppWebViewClient extends WebViewClient {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         view.getContext().startActivities(intent);
         return true;
+
     }
+
 }
